@@ -1,0 +1,2512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassicFeast-Restaurant</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <!-- bs-cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS cdn link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#top-1" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+    <!-- Welcome Modal (when the page loads) -->
+    <div class="modal fade " id="welcomeModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content text-center ">
+
+                <div class="modal-header">
+                    <h5 class="modal-title"><img src="../assets/images/Logo-1.png" height="40px" alt="ClassicFeast Logo"> Welcome to ClassicFeast </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> 
+
+                <div class="modal-body mt-3">
+                    <p>Enjoy delicious meals and explore our special menu!</p>
+                </div>
+
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn" data-bs-dismiss="modal"> Start Exploring </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- Header Section --->
+    <nav class="header">
+        <div class="container-fluid">
+            <div class="row align-items-center header-item">
+
+                <!-- Left contact info -->
+                <div class="col-lg-8 col-md-12">
+                    <ul class="header-contact mb-0">
+                        <li class="icon">
+                            <i class="fa-solid fa-map-location"></i>
+                            <span>129 Culinary Avenue</span>
+                        </li>
+                        <li class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+111-222-333</span>
+                        </li>
+                        <li class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@example.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right social icons -->
+                <div class="col-lg-4 col-md-12 d-flex justify-content-lg-end justify-content-center">
+                    <div class="social-contact">
+                        <a href="https://www.facebook.com/">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://in.linkedin.com/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+        <div class="container-fluid">
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Left Menu -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link " href="#homeSection">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#aboutSection">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="#portfolioSection">Our Portfolio</a></li>
+                            <li><a class="dropdown-item" href="#events">Events We Cater</a></li>
+                            <li><a class="dropdown-item" href="#team">team</a></li>
+                            <li><a class="dropdown-item" href="#pricing">Dining Packages</a></li><hr>
+                             <li><a class="dropdown-item" href="#">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#serviceSection">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menuSection">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pagesSection">Pages</a></li>
+                </ul>
+
+            <!-- Center Logo -->
+            <a class="navbar-brand mx-auto d-none d-lg-block" href="">
+                <img src="../assets/images/Logo-1.png" alt="Logo" height="100">
+            </a>
+
+            <!-- Right Menu -->
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#products">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+
+                <!-- Modal Trigger button -->         
+                <li class="nav-item ms-lg-2">
+                    <a class="btn" data-bs-toggle="modal" data-bs-target="#reservationModal">Reservation</a>
+                </li>
+
+            </ul>
+
+            <!-- Center Logo for Mobile -->
+            <a class="navbar-brand mx-auto d-lg-none" href="#">
+                <img src="../assets/images/Logo-1.png" alt="Logo" height="80px">
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Reservation Modal -->
+    <div class="modal fade" id="reservationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+      
+                <div class="modal-header">
+                    <h5 class="modal-title">Reserve Your Table <span><i class="fa-solid fa-utensils"></i></span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <!-- Success message -->
+                    <div class="alert alert-success collapse" id="successAlert">
+                        ✅ Reservation submitted successfully!
+                    </div>
+                    <form id="reservationForm" class="collapse show">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" pattern="[0-9]{10}"  maxlength="10" inputmode="numeric" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Number of People</label>
+                                <input type="number" class="form-control" min="1" max="20" required>
+                            </div>
+                        
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Reservation Date</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Reservation Time</label>
+                                <input type="time" class="form-control" required>
+                            </div>
+
+                            <div class="input-field textarea mb-3">
+                                <label class="form-label">Special Request</label>
+                                <textarea rows="3" cols="30" name="specialRequest" id="specialRequest"></textarea>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" form="reservationForm" class="btn">
+                        Reserve
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+ 
+    <section id="homeSection">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="../assets/images/Home-1.jpg" class="d-block w-100 img-fluid" alt="slide">
+                <div class="carousel-overlay"></div>
+
+                <div class="carousel-caption">
+                    <h5 class="subtitle">~ Welcome to Classic Feast ~</h5>
+                    <h2 class="title">Exquisite Dining <br>Experience Awaits</h2>
+                    <a href="#menuSection" class="btn mt-3 pt-2">Explore Menu</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="../assets/images/Home-2.jpg" class="d-block w-100 img-fluid" alt="slide">
+                <div class="carousel-overlay"></div>
+
+                <div class="carousel-caption">
+                    <h5 class="subtitle">~ Welcome to Classic Feast ~</h5>
+                    <h2 class="title">Host Unforgettable <br>Events with Us</h2>
+                    <a href="#" class="btn mt-3 pt-2">View Venues</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="../assets/images/Home-3.jpg" class="d-block w-100 img-fluid" alt="slide">
+                <div class="carousel-overlay"></div>
+
+                <div class="carousel-caption">
+                    <h5 class="subtitle">~ Welcome to Classic Feast ~</h5>
+                    <h2 class="title">From Elegant Events to<br>Casual Gatherings</h2>
+                    <a href="#" class="btn mt-3 pt-2">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </button>
+
+    </div>
+    </section>   
+
+    <section id="features">
+        <div class="features-container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box1">
+                        <div class="box-container">
+                            <div class="features-icon">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+                            <div class="features-caption">
+                                <h3>Fine Dining</h3>
+                                <p>Experience exquisite meals in a sophisticated setting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box2">
+                        <div class="box-container">
+                            <div class="features-icon">
+                                <i class="fa-solid fa-bell-concierge"></i>
+                            </div>
+                            <div class="features-caption">
+                                <h3>Custom Catering</h3>
+                                <p>Tailored catering services for any event or occasion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box3">
+                        <div class="box-container">
+                            <div class="features-icon">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+                            <div class="features-caption">
+                                <h3>Seasonal Menus</h3>
+                                <p>Menus featuring fresh, seasonal ingredients for optimal flavor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="box4">
+                        <div class="box-container">
+                            <div class="features-icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div class="features-caption">
+                                <h3>Online Reservations</h3>
+                                <p>Easy online booking for a hassle-free dining experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutSection">
+        <div class="about-container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="experience" >
+                        <span>
+                            <h2>20</h2>
+                            <p>Years Of Excellence</p>
+                        </span>
+                    </div>
+                    <div class="about-image">
+                        <div class="grid-img1"></div>
+                        <div class="grid-img2"></div>
+                        <div class="grid-img3"></div>       
+                    </div>    
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="about-content">
+                        <div class="sub-heading">
+                            <h3>About Us <span><i class="fa-solid fa-utensils"></i></span></h3>
+                            <h2>Discover Our Culinary Passion And Experience Exquisite Dining</h2>
+                        </div>
+                        <p>At Bistro, we have been dedicated to serving exceptional cuisine and providing outstanding catering services for over 20 years. Our chefs craft each dish with the finest ingredients and a passion for flavor.</p>
+                        <p>Our mission is to deliver a memorable dining experience and cater to your events with the highest level of professionalism and creativity.</p>
+                        <div class="about-features">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="features-group">
+                                        <ul>
+                                            <li><span><i class="fa-solid fa-certificate"></i></span> Expert Chefs</li>
+                                        </ul>
+                                        <ul>
+                                            <li><span><i class="fa-solid fa-utensils"></i></span> Gourmet Cuisine</li>
+                                        </ul>
+                                    </div>          
+                                </div>
+                                <div class="col-6">
+                                    <div class="features-group">
+                                        <ul>
+                                            <li><span><i class="fa-solid fa-martini-glass-citrus"></i></span> Signature Drinks</li>
+                                        </ul>
+                                        <ul>
+                                            <li><span><i class="fa-solid fa-calendar-days"></i></span> Event Catering</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#contact us" id="btn">
+                                <button>Contact Us</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="counting">
+        <div class="counting-overlay">
+            <div class="counting-conatiner">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="counter-box1">
+                            <div class="counter-item">
+                                <div class="counter-icon">
+                                    <i class="fa-solid fa-utensils"></i>
+                                </div>
+                                <div class="counter-caption">
+                                    <span><h1 class="counter" data-target="1000">0</h1></span>
+                                    <span class="short-line"></span>
+                                    <p>Dishes Served</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="counter-box2">
+                            <div class="counter-item">
+                                <div class="counter-icon">
+                                    <i class="fa-solid fa-calendar"></i>
+                                </div>
+                                <div class="counter-caption">
+                                    <span><h1 class="counter" data-target="250">0</h1></span>
+                                    <span class="short-line"></span>
+                                    <p>Events Hosted</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="counter-box3">
+                            <div class="counter-item">
+                                <div class="counter-icon">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div class="counter-caption">
+                                    <span><h1 class="counter" data-target="10">0</h1></span>
+                                    <span class="short-line"></span>
+                                    <p>Years of Service</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="counter-box4">
+                            <div class="counter-item">
+                                <div class="counter-icon">
+                                    <i class="fa-solid fa-face-smile"></i>
+                                </div>
+                                <div class="counter-caption">
+                                    <span><h1 class="counter" data-target="30000">0</h1></span>
+                                    <span class="short-line"></span>
+                                    <p>Satisfied Customers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="serviceSection">
+        <div class="service-container">
+            <div class="service-header">
+                <h3><span><i class="fa-solid fa-utensils"></i></span> Discover Our Offerings <span><i class="fa-solid fa-utensils"></i></span></h3>
+                <h2>our services</h2>
+            </div>
+            <div class="service-content">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="serviceBox-1">
+                                        <div class="card d-block w-100">
+                                            <div class="serviceOverlay">
+                                                <div class="service-icon">
+                                                    <i class="fa-solid fa-bell-concierge"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <a href="#">
+                                                        <h5><span class="card-title">Custom Catering</span></h5>
+                                                    </a>
+                                                    <span class="short-line"></span>
+                                                    <p class="card-text">Tailored catering services crafted to match your unique tastes and event needs.</p>
+                                                    <a href="#" class="btn">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="col-4">
+                                    <div class="serviceBox-2">
+                                        <div class="card d-block w-100">
+                                            <div class="serviceOverlay">
+                                                <div class="service-icon">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <a href="#">
+                                                        <h5><span class="card-title">Event Planning</span></h5>
+                                                    </a>
+                                                    <span class="short-line"></span>
+                                                    <p class="card-text">Expertly coordinated events tailored to your vision and occasion needs.</p>
+                                                    <a href="#" class="btn">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                <div class="col-4">
+                                    <div class="serviceBox-3">
+                                        <div class="card d-block w-100">
+                                            <div class="serviceOverlay">
+                                                <div class="service-icon">
+                                                    <i class="fa-solid fa-wine-glass"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <a href="#">
+                                                        <h5><span class="card-title">Private Dining</span></h5>
+                                                    </a>
+                                                    <span class="short-line"></span>
+                                                    <p class="card-text">Exclusive dining experiences curated for intimate celebrations and special moments.</p>
+                                                    <a href="#" class="btn">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="serviceBox-4">
+                                        <div class="card d-block w-100">
+                                            <div class="serviceOverlay">
+                                                <div class="service-icon">
+                                                    <i class="fa-solid fa-utensils"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <a href="#">
+                                                        <h5><span class="card-title">Menu Customization</span></h5>
+                                                    </a>
+                                                    <span class="short-line"></span>
+                                                    <p class="card-text">Collaborate with our chefs to design a personalized menu tailored to your culinary preferences.</p>
+                                                    <a href="#" class="btn">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="serviceBox-5">
+                                        <div class="card d-block w-100">
+                                            <div class="serviceOverlay">
+                                                <div class="service-icon">
+                                                    <i class="fa-solid fa-briefcase"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <a href="#">
+                                                        <h5><span class="card-title">Corporate Catering</span></h5>
+                                                    </a>
+                                                    <span class="short-line"></span>
+                                                    <p class="card-text">Professional catering solutions designed to elevate your corporate events and impress every guest.</p>
+                                                    <a href="#" class="btn">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="serviceBox-6">
+                                        <div class="card d-block w-100">
+                                            <div class="serviceOverlay">
+                                                <div class="service-icon">
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <a href="#">
+                                                        <h5><span class="card-title">Special Occasions</span></h5>
+                                                    </a>
+                                                    <span class="short-line"></span>
+                                                    <p class="card-text">Celebrate life's most cherished moments with exceptional catering tailored to your unique occasion.</p>
+                                                    <a href="#" class="btn">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
+
+            <section id="portfolioSection">
+                <div class="portfolio-container">
+                    <div class="portfolio-header">
+                        <h3><span><i class="fa-solid fa-utensils"></i></span> Explore Our Work <span><i class="fa-solid fa-utensils"></i></span></h3>
+                        <h2>our portfolio</h2>
+                    </div>
+                    <div class="portfolio mt-3">
+                        <!-- Tabs Navigation -->
+                        <ul class="nav nav-pills tab-buttons">
+                            <li class="nav-item">
+                                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#all">All</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#event">Event Catering</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#menu">Menu Creation</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#banquet">Banquet Setup</button>
+                            </li>
+                        </ul>
+
+                        <!-- Tabs Content -->
+                        <div class="tab-content mt-3">
+                            <div class="tab-pane fade show active" id="all">
+                                <div class="portfolio-container mt-4">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="portfolio-item1">
+                                                <div class="portfolio-content">
+                                                    <div class="content">
+                                                        <div class="view">
+
+                                                        </div>
+                                                        <div class="text">
+                                                            <p class="mb-2">Event Catering</p>
+                                                            <a href="#" >
+                                                                <h3><span>Wedding Feast</span></h3>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="portfolio-item2">
+                                                <div class="portfolio-content">
+                                                    <div class="content">
+                                                        <div class="view">
+
+                                                        </div>
+                                                        <div class="text">
+                                                            <p class="mb-2">Menu Creation</p>
+                                                            <a href="#" >
+                                                                <h3><span>Signature Dishes</span></h3>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="portfolio-item3">
+                                                <div class="portfolio-content">
+                                                    <div class="content">
+                                                        <div class="view">
+
+                                                        </div>
+                                                        <div class="text">
+                                                            <p class="mb-2">Event Catering</p>
+                                                            <a href="#" >
+                                                                <h3><span>Private Dinner</span></h3>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-4">
+                                            <div class="portfolio-item4">
+                                                <div class="portfolio-content">
+                                                    <div class="content ">
+                                                        <div class="view">
+
+                                                        </div>
+                                                        <div class="text">
+                                                            <p class="mb-2">Banquet Setup</p>
+                                                            <a href="#" >
+                                                                <h3><span>Outdoor Feast</span></h3>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="portfolio-item5">
+                                                <div class="portfolio-content">
+                                                    <div class="content">
+                                                        <div class="view">
+
+                                                        </div>
+                                                        <div class="text">
+                                                            <p class="mb-2">Menu Creation</p>
+                                                            <a href="#" >
+                                                                <h3><span>Healthy Choices</span></h3>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="portfolio-item6">
+                                                <div class="portfolio-content">
+                                                    <div class="content">
+                                                        <div class="view">
+
+                                                        </div>
+                                                        <div class="text">
+                                                            <p class="mb-2">Banquet Setup</p>
+                                                            <a href="#" >
+                                                                <h3><span>Formal Banquet</span></h3>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="event">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="portfolio-item1">
+                                            <div class="portfolio-content">
+                                                <div class="content">
+                                                    <div class="view">
+
+                                                        </div>
+                                                    <div class="text">
+                                                        <p class="mb-2">Event Catering</p>
+                                                        <a href="#" >
+                                                            <h3><span>Wedding Feast</span></h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="portfolio-item3">
+                                            <div class="portfolio-content">
+                                                <div class="content">
+                                                    <div class="view">
+
+                                                        </div>
+                                                    <div class="text">
+                                                        <p class="mb-2">Event Catering</p>
+                                                        <a href="#" >
+                                                            <h3><span>Private Dinner</span></h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="menu">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="portfolio-item2">
+                                            <div class="portfolio-content">
+                                                <div class="content">
+                                                    <div class="view">
+
+                                                        </div>
+                                                    <div class="text">
+                                                        <p class="mb-2">Menu Creation</p>
+                                                        <a href="#" >
+                                                            <h3><span>Signature Dishes</span></h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="portfolio-item5">
+                                            <div class="portfolio-content">
+                                                <div class="content">
+                                                    <div class="view">
+
+                                                        </div>
+                                                    <div class="text">
+                                                        <p class="mb-2">Menu Creation</p>
+                                                        <a href="#" >
+                                                            <h3><span>Healthy Choices</span></h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="banquet">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="portfolio-item4">
+                                            <div class="portfolio-content">
+                                                <div class="content">
+                                                    <div class="view">
+
+                                                        </div>
+                                                    <div class="text">
+                                                        <p class="mb-2">Banquet Setup</p>
+                                                        <a href="#" >
+                                                            <h3><span>Outdoor Feast</span></h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="portfolio-item6">
+                                            <div class="portfolio-content">
+                                                <div class="content">
+                                                    <div class="view">
+                                                    </div>
+                                                    <div class="text">
+                                                        <p class="mb-2">Banquet Setup</p>
+                                                        <a href="#" >
+                                                            <h3><span>Formal Banquet</span></h3>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section id="missionSection">
+        <div class="missionOverlay">
+            <div class="missionConatiner">
+                <div class="heading mb-3">
+                    <h3>Our Mission <span><i class="fa-solid fa-utensils"></i></span></h3>
+                    <h2>Creating Memorable Dining Experiences</h2>
+                </div>
+                <p class="mb-2">At our restaurant, we are dedicated to providing exceptional dining experiences and delivering outstanding service to every guest.</p>
+                <div class="mission-points">
+                    <div class="row mb-2">
+                        <div class="col-2 pt-2">
+                            <div class="icon">
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <h3>Culinary Excellence</h3>
+                            <p>We aim to offer culinary excellence by crafting exquisite dishes using the finest ingredients and innovative cooking techniques.</p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-2 pt-2">
+                            <div class="icon">
+                                <span><i class="fa-solid fa-handshake"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <h3>Exceptional Service</h3>
+                            <p>We are committed to delivering exceptional service by ensuring that every guest feels valued and well-cared for from the moment they enter our restaurant.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2 pt-2">
+                            <div class="icon">
+                                <span><i class="fa-solid fa-globe"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <h3>Global Flavors</h3>
+                            <p>We celebrate global flavors by offering a diverse menu that features a range of international cuisines and unique culinary experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="menuSection">
+        <div class="menuContainer mt-5">
+            <div class="menu-header text-center">
+                <h3><span><i class="fa-solid fa-utensils"></i></span> what we offer <span><i class="fa-solid fa-utensils"></i></span></h3>
+                <h2>our menu</h2>
+            </div>
+                    <div class="menu mt-3">
+                        <!-- Tabs Navigation -->
+                        <ul class="nav nav-pills tab-buttons">
+                            <li class="nav-item">
+                                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#appetizers">Appetizers</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#soups">Soups Salads</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#mainCourses">Main Courses</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#desserts">Desserts</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#beveragrs">Beverages</button>
+                            </li>
+                        </ul>
+
+                        <!-- Tabs Content -->
+                        <div class="tab-content mt-4 ">
+                            
+                            <!-- Appetizers Tab Content -->
+                            <div class="tab-pane fade show active" id="appetizers">
+                                <div class="row g-4">
+                                    <!-- Menu Item -->
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Starter-1.jpg" alt="Cheese Stick">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Cheese Stick</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>7
+                                                </h4>
+                                                <p class="menu-desc">Crunchy and cheesy sticks, perfect for a quick bite.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Starter-2.jpg" alt="Chicken Wings">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Chicken Wings</span>
+                                                    <span class="line"></span>
+                                                    <span class="doller">$</span>13
+                                                </h4>
+                                                <p class="menu-desc">Spicy and juicy wings, served with a tangy dipping sauce.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Starter-3.jpg" alt="Bruschetta">
+                                            </div>
+                                            <div class="content">   
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Bruschetta</span> <span class="line"></span> <span class="doller">$</span>8
+                                                </h4>
+                                                <p class="menu-desc">Grilled bread topped with fresh tomatoes, basil, and balsamic drizzle.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Starter-4.jpg" alt="Fried Rice">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Fried Rice</span>
+                                                    <span class="line"></span>
+                                                    <span class="doller">$</span>10
+                                                </h4>
+                                                <p class="menu-desc">Delicious fried rice with vegetables and a hint of soy sauce.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Starter-5.jpg" alt="Meatballs">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Meatballs</span>
+                                                    <span class="line"></span>
+                                                    <span class="doller">$</span>9
+                                                </h4>
+                                                <p class="menu-desc">Savory meatballs in a rich tomato sauce.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Starter-6.jpg" alt="Samosas">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Samosas</span>
+                                                    <span class="line"></span>
+                                                    <span class="doller">$</span>6
+                                                </h4>
+                                                <p class="menu-desc">Golden, crispy pastries filled with spiced potatoes and peas.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Starter-7.jpg" alt="Stuffed Mushrooms">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Stuffed Mushrooms</span>
+                                                    <span class="line"></span>
+                                                    <span class="doller">$</span>11
+                                                </h4>
+                                                <p class="menu-desc">Garlic and herb stuffed mushrooms topped with melted cheese.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Starter-8.jpg" alt="Spring Roll">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Spring Roll</span>
+                                                    <span class="line"></span>
+                                                    <span class="doller">$</span>5
+                                                </h4>
+                                                <p class="menu-desc">Light and crispy rolls filled with vegetables and served with a sweet chili sauce.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Soups Tab Content -->
+                            <div class="tab-pane fade" id="soups">
+                                <div class="row g-4">
+                                    <!-- Menu Item -->
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Salad-1.jpg" alt="Chicken Soup">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Chicken Soup</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>10
+                                                </h4>
+                                                <p class="menu-desc">A comforting bowl of hearty chicken soup made with fresh vegetables and herbs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Salad-2.jpg" alt="Chicken Noodle Soup">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Chicken Noodle Soup</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>11
+                                                </h4>
+                                                <p class="menu-desc">A classic comfort soup with tender chicken, egg noodles, and hearty vegetables in a savory broth.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Salad-3.jpg" alt="Hot & Sour Soup">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Hot & Sour Soup</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>9
+                                                </h4>
+                                                <p class="menu-desc">A flavorful and spicy soup with a balance of hot, sour, and savory notes, packed with vegetables and tofu.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Salad-4.jpg" alt="Tomato Soup">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Tomato Soup</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>8
+                                                </h4>
+                                                <p class="menu-desc">A creamy and comforting bowl of tomato soup, perfect for any season, made with ripe tomatoes and fresh herbs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Salad-5.jpg" alt="Chicken Caesar Salad">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Chicken Caesar Salad</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>12
+                                                </h4>
+                                                <p class="menu-desc">A fresh and flavorful Chicken Caesar Salad, featuring grilled chicken, crisp romaine lettuce, and creamy Caesar dressing.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Salad-6.jpg" alt="Spinach Salad">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Spinach Salad</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>10
+                                                </h4>
+                                                <p class="menu-desc">A refreshing and nutritious Spinach Salad, topped with fresh veggies and a light vinaigrette dressing.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Salad-7.jpg" alt="Taco Salad">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Taco Salad</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>12
+                                                </h4>
+                                                <p class="menu-desc">A delicious and savory Taco Salad loaded with seasoned beef, fresh veggies, and a crunchy tortilla shell.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Salad-8.jpg" alt="Veg Salad">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Veg Salad</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>9
+                                                </h4>
+                                                <p class="menu-desc">A fresh and vibrant Veg Salad filled with crisp veggies, perfect for a light and healthy meal.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Main Courses Tab Content -->
+                            <div class="tab-pane fade" id="mainCourses">
+                                <div class="row g-4">
+                                    <!-- Menu Item -->
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Main-1.jpg" alt="Burger">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Burger</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>12
+                                                </h4>
+                                                <p class="menu-desc">A juicy and flavorful burger with all the classic toppings, perfect for a satisfying meal.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Main-2.jpg" alt="Fried Rice">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Fried Rice</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>10
+                                                </h4>
+                                                <p class="menu-desc">A delicious fried rice with vegetables and a hint of soy sauce, perfect for any meal.</p>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Main-3.jpg" alt="Roast Chicken">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Roast Chicken</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>15
+                                                </h4>
+                                                <p class="menu-desc">A perfectly roasted chicken, seasoned with aromatic herbs and spices for a tender and flavorful meal.</p>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Main-4.jpg" alt="Spaghetti">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Spaghetti</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>13
+                                                </h4>
+                                                <p class="menu-desc">A classic Italian dish with perfectly cooked pasta served with a rich and flavorful tomato sauce.</p>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Main-5.jpg" alt="Pizza">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Pizza</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>14
+                                                </h4>
+                                                <p class="menu-desc">A delicious pizza with a crispy crust, topped with fresh ingredients and a savory tomato sauce.</p>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Main-6.jpg" alt="Pasta">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Pasta</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>11
+                                                </h4>
+                                                <p class="menu-desc">A rich and creamy pasta dish with perfectly cooked noodles, complemented by a savory sauce.</p>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Main-7.jpg" alt="Grilled Salmon">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Grilled Salmon</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>18
+                                                </h4>
+                                                <p class="menu-desc">Perfectly grilled salmon fillet, seasoned with fresh herbs and served with a side of vegetables.</p>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Main-8.jpg" alt="Biryani">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Biryani</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>16
+                                                </h4>
+                                                <p class="menu-desc">A flavorful and aromatic rice dish made with fragrant basmati rice, tender meat, and a blend of spices.</p>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>                                                  
+                            </div>
+
+                            <!-- Desserts Tab Content -->
+                            <div class="tab-pane fade" id="desserts">
+                                <div class="row g-4">
+                                    <!-- Menu Item -->
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Dessert-1.jpg" alt="Chocolate Cake">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Chocolate Cake</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>8
+                                                </h4>
+                                                <p class="menu-desc">A rich and decadent chocolate cake layered with velvety smooth frosting, perfect for dessert lovers.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Dessert-2.jpg" alt="Cheese Cake">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Cheese Cake</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>9
+                                                </h4>
+                                                <p class="menu-desc">A creamy and smooth cheesecake with a buttery graham cracker crust, topped with fresh fruit or chocolate.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Dessert-3.jpg" alt="Fruit Tart">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Fruit Tart</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>9
+                                                </h4>
+                                                <p class="menu-desc">A delightful tart with a crisp pastry crust, filled with creamy custard and topped with an assortment of fresh, vibrant fruits.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Dessert-4.jpg" alt="Baklava">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Baklava</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>7
+                                                </h4>
+                                                <p class="menu-desc">A sweet, flaky pastry made with layers of filo dough, filled with a mixture of finely chopped nuts and sweetened with honey syrup.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Dessert-5.jpg" alt="Ice Cream">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Ice Cream</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>5
+                                                </h4>
+                                                <p class="menu-desc">A creamy and indulgent ice cream made with the finest ingredients, available in a variety of delicious flavors.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Dessert-6.jpg" alt="Apple Pie">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Apple Pie</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>7
+                                                </h4>
+                                                <p class="menu-desc">A warm and comforting apple pie with a flaky, buttery crust and a sweet, spiced apple filling.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Dessert-7.jpg" alt="Cherry Pie">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Cherry Pie</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>8
+                                                </h4>
+                                                <p class="menu-desc">A deliciously sweet and tangy cherry pie with a golden, flaky crust and a rich, flavorful filling.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Dessert-8.jpg" alt="Tiramisu">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Tiramisu</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>9
+                                                </h4>
+                                                <p class="menu-desc">A classic Italian dessert made with layers of coffee-soaked ladyfingers and creamy mascarpone filling.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Beveragrs Courses Tab Content -->
+                            <div class="tab-pane fade" id="beveragrs">
+                                <div class="row g-4">
+                                    <!-- Menu Item -->
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Beverage-1.jpg" alt="Apple Juice">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Apple Juice</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>4
+                                                </h4>
+                                                <p class="menu-desc">A refreshing and sweet drink made from fresh apples, perfect for quenching your thirst.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Beverage-2.jpg" alt="Coffee">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Coffee</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>5
+                                                </h4>
+                                                <p class="menu-desc">A rich and aromatic cup of coffee, perfect for your morning boost or a relaxing break.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Beverage-3.jpg" alt="Hot Chocolate">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Hot Chocolate</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>6
+                                                </h4>
+                                                <p class="menu-desc">A rich and creamy hot chocolate, perfect for warming up on a cold day.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Beverage-4.jpg" alt="Iced Tea">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Iced Tea</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>5
+                                                </h4>
+                                                <p class="menu-desc">A refreshing and chilled iced tea, perfect for a hot day.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Beverage-5.jpg" alt="Lemonade">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Lemonade</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>6
+                                                </h4>
+                                                <p class="menu-desc">A tangy and refreshing lemonade, the perfect drink to quench your thirst.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Beverage-6.jpg" alt="Milkshake">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Milkshake</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>8
+                                                </h4>
+                                                <p class="menu-desc">A creamy and indulgent milkshake, blended with your choice of flavors and topped with whipped cream.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Beverage-7.jpg" alt="Orange Juice">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Orange Juice</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>6
+                                                </h4>
+                                                <p class="menu-desc">Freshly squeezed orange juice, bursting with natural sweetness and vitamin C.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="menu-item d-flex">
+                                            <div class="menu-img">
+                                                <img src="../assets/images/Beverage-8.jpg" alt="Tea">
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="menu-title">
+                                                    <span class="sub">Tea</span>
+                                                    <span class="line"></span> 
+                                                    <span class="doller">$</span>4
+                                                </h4>
+                                                <p class="menu-desc">A soothing cup of brewed tea, perfect for any time of the day.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>       
+                            </div>                           
+                        </div>
+                    </div> 
+        </div>
+    </section>
+
+    <section id="process">
+    <div class="heading text-center">
+        <h3><span><i class="fa-solid fa-utensils"></i></span> How We Work <span><i class="fa-solid fa-utensils"></i></span></h3>
+        <h2>our process</h2>
+    </div>
+
+    <div class="processContainer mt-2">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="processBox-1">
+                    <div class="card d-block w-100 process-animate">
+                        <div class="processOverlay">
+                            <div class="card-body text-white text-center">
+                                <h1 class="card-number">01</h1>
+                                <h4>initial consultation</h4>
+                                <p class="card-text">Begin with an initial consultation to understand your event vision, preferences, and requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="processBox-2">
+                    <div class="card d-block w-100 process-animate delay-1">
+                        <div class="processOverlay">
+                            <div class="card-body text-white text-center">
+                                <h1 class="card-number">02</h1>
+                                <h4>Menu Planning</h4>
+                                <p class="card-text">Professional planning of your menu, considering factors like dietary preferences and seasonal ingredients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="processBox-3">
+                    <div class="card d-block w-100 process-animate delay-2">
+                        <div class="processOverlay">
+                            <div class="card-body text-white text-center">
+                                <h1 class="card-number">03</h1>
+                                <h4>Event Preparation</h4>
+                                <p class="card-text">Meticulous preparation of food and setup of the venue to ensure everything is perfect for your event.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+    </div>
+    </section>
+
+    <section id="banner">
+        <div class="content">
+            <div class="heading mb-2">
+                <h3 data-aos="fade-right" data-aos-delay="400">
+                    Explore Our Culinary Delights <span><i class="fa-solid fa-utensils"></i></span>
+                </h3>
+
+                <h2 data-aos="fade-left" data-aos-delay="500">
+                Experience Exceptional Dining and Catering Services
+                </h2>
+            </div>
+
+            <a class="btn" href="/Get-Quote" data-aos="zoom-in" data-aos-delay="400">
+            Request a Quote
+            </a>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="container p-0">
+            <div class="header text-center">
+                <h3><span><i class="fa-solid fa-utensils"></i></span> Discover Our Catering Services <span><i class="fa-solid fa-utensils"></i></span></h3>
+                <h2>Events We Cater</h2>
+            </div>
+
+
+            <div class="overflow-hidden py-3">
+                <div class="row flex-nowrap card-slider" id="cardSlider">
+
+                    <!-- Card 1 -->
+                    <div class="col-12 col-sm-6 col-lg-4 slider-card">
+                        <div class="eventBox-1">
+                            <div class="card d-block w-100">
+                                <div class="eventsOverlay justify-content-center align-items-center">
+                                    <div class="eventContent text-center">
+                                        <h4>Wedding Catering</h4>
+                                        <button>learn more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-12 col-sm-6 col-lg-4 slider-card">
+                        <div class="eventBox-2">
+                            <div class="card d-block w-100">
+                                <div class="eventsOverlay justify-content-center align-items-center">
+                                    <div class="eventContent text-center">
+                                        <h4>corporate parties</h4>
+                                        <button>learn more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-sm-6 col-lg-4 slider-card">
+                        <div class="eventBox-3">
+                            <div class="card d-block w-100">
+                                <div class="eventsOverlay justify-content-center align-items-center">
+                                    <div class="eventContent text-center">
+                                        <h4>Private parties</h4>
+                                        <button>learn more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-12 col-sm-6 col-lg-4 slider-card">
+                        <div class="eventBox-4">
+                            <div class="card d-block w-100">
+                                <div class="eventsOverlay justify-content-center align-items-center">
+                                    <div class="eventContent text-center">
+                                        <h4>holiday celebrations</h4>
+                                        <button>learn more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <!-- Card 5 -->
+                    <div class="col-12 col-sm-6 col-lg-4 slider-card">
+                        <div class="eventBox-5">
+                            <div class="card d-block w-100">
+                                <div class="eventsOverlay justify-content-center align-items-center">
+                                    <div class="eventContent text-center">
+                                        <h4>special Occasions</h4>
+                                        <button>learn more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-12 col-sm-6 col-lg-4 slider-card">
+                        <div class="eventBox-6">
+                            <div class="card d-block w-100">
+                                <div class="eventsOverlay justify-content-center align-items-center">
+                                    <div class="eventContent text-center">
+                                        <h4>Outdoor Catering</h4>
+                                        <button>learn more</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <div class="header text-center">
+                <h3><span><i class="fa-solid fa-utensils"></i></span> Customer Favorites <span><i class="fa-solid fa-utensils"></i></span></h3>
+                <h2>Popular Items</h2>
+            </div>
+            
+            
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../assets/images/product-1.jpg" class="card-img-top" alt="Card image">
+                        <div class="options">
+                            <a href="/cart" title="Add to Cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                            <a href="/wishlist" title="Add to Wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="/view-details" title="View Details">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating d-flex">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <h5>5(3)</h5>
+                            </div>
+                            <h5 class="card-title">chicken burger</h5>
+                            <p class="card-price"> $7.99 <span>$9.99</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../assets/images/product-2.jpg" class="card-img-top" alt="Card image">
+                        <div class="options">
+                            <a href="/cart" title="Add to Cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                            <a href="/wishlist" title="Add to Wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="/view-details" title="View Details">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating d-flex">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <h5>5(3)</h5>
+                            </div>
+                            <h5 class="card-title">Chocolate Cake</h5>
+                            <p class="card-price"> $10.99 <span>$12.99</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../assets/images/product-3.jpg" class="card-img-top" alt="Card image">
+                        <div class="options">
+                            <a href="/cart" title="Add to Cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                            <a href="/wishlist" title="Add to Wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="/view-details" title="View Details">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating d-flex">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <h5>5(3)</h5>
+                            </div>
+                            <h5 class="card-title">Chicken Wings</h5>
+                            <p class="card-price"> $9.99 <span>$11.99</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../assets/images/product-4.jpg" class="card-img-top" alt="Card image">
+                        <div class="options">
+                            <a href="/cart" title="Add to Cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                            <a href="/wishlist" title="Add to Wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="/view-details" title="View Details">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating d-flex">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <h5>5(3)</h5>
+                            </div>
+                            <h5 class="card-title">Coffee</h5>
+                            <p class="card-price"> $4.99 <span>$3.99</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../assets/images/product-5.jpg" class="card-img-top" alt="Card image">
+                        <div class="options">
+                            <a href="/cart" title="Add to Cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                            <a href="/wishlist" title="Add to Wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="/view-details" title="View Details">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating d-flex">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <h5>5(3)</h5>
+                            </div>
+                            <h5 class="card-title">Smoothies</h5>
+                            <p class="card-price"> $4.99 <span>$5.99</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../assets/images/product-6.jpg" class="card-img-top" alt="Card image">
+                        <div class="options">
+                            <a href="/cart" title="Add to Cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                            <a href="/wishlist" title="Add to Wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="/view-details" title="View Details">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating d-flex">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <h5>5(3)</h5>
+                            </div>
+                            <h5 class="card-title">Grilled Salmon</h5>
+                            <p class="card-price"> $12.99 <span>$15.99</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../assets/images/product-7.jpg" class="card-img-top" alt="Card image">
+                        <div class="options">
+                            <a href="/cart" title="Add to Cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                            <a href="/wishlist" title="Add to Wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="/view-details" title="View Details">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating d-flex">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <h5>5(3)</h5>
+                            </div>
+                            <h5 class="card-title">Caesar Salad</h5>
+                            <p class="card-price"> $6.49 <span>$7.99</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../assets/images/product-8.jpg" class="card-img-top" alt="Card image">
+                        <div class="options">
+                            <a href="/cart" title="Add to Cart">
+                                <i class="fa-solid fa-cart-plus"></i>
+                            </a>
+                            <a href="/wishlist" title="Add to Wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="/view-details" title="View Details">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="rating d-flex">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <h5>5(3)</h5>
+                            </div>
+                            <h5 class="card-title">Cheese Cake</h5>
+                            <p class="card-price"> $5.49 <span>$6.99</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pagesSection">
+        <div class="pageContainer">
+            <div class="header text-center">
+                <h3><span><i class="fa-solid fa-utensils"></i></span> Customers Feedback <span><i class="fa-solid fa-utensils"></i></span></h3>
+                <h2>Our Testimonials</h2>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-card">
+                                    <div class="avatar">
+                                        <img src="../assets/images/alex-suprun.jpg" alt="Alex Suprun">
+                                    </div>
+                                    <div class="quote-right">
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </div>
+                                    <div class="heading text-white text-center mb-2">
+                                        <h3>alex surprun</h3>
+                                        <h5>Gourmet Reviewer</h5>
+                                    </div>
+                                    <div class="text">
+                                        <p>" The restaurant offers a delightful array of dishes that cater to every palate. The attention to detail in both the food and the service was evident. It's a place I'll definitely recommend for anyone looking to enjoy a top-notch dining experience. "</p>
+                                        <div class="rating text-center">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-card right">
+                                    <div class="avatar">
+                                        <img src="../assets/images/sophia.jpg" alt="Sophia">
+                                    </div>
+                                    <div class="quote-right">
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </div>
+                                    <div class="heading text-white text-center mb-2">
+                                        <h3>sophia</h3>
+                                        <h5>event planner</h5>
+                                    </div>
+                                    <div class="text">
+                                        <p>" I recently hosted an event here, and the catering service exceeded all expectations. The food was exceptional, and the staff went above and beyond to ensure everything was perfect. Highly recommend for any special occasion. "</p>
+                                        <div class="rating text-center">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                     <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="testimonial-card">
+                                    <div class="avatar">
+                                        <img src="../assets/images/yogendra-singh.jpg" alt="Alex Suprun">
+                                    </div>
+                                    <div class="quote-right">
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </div>
+                                    <div class="heading text-white text-center mb-2">
+                                        <h3>yogendra singh</h3>
+                                        <h5>Regular Diner</h5>
+                                    </div>
+                                    <div class="text">
+                                        <p>" Every visit to this restaurant is a treat. The menu is diverse, and the quality of the food is consistently outstanding. The atmosphere is warm and inviting, making it a perfect spot for both casual meals and special celebrations. "</p>
+                                        <div class="rating text-center">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="testimonial-card right">
+                                    <div class="avatar">
+                                        <img src="../assets/images/sarah-jhonson.jpg" alt="Sophia">
+                                    </div>
+                                    <div class="quote-right">
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </div>
+                                    <div class="heading text-white text-center mb-2">
+                                        <h3>sarah jhonson</h3>
+                                        <h5>food enthusiast</h5>
+                                    </div>
+                                    <div class="text">
+                                        <p>" Dining at this restaurant was an unforgettable experience. The flavors were exquisite, and the presentation of each dish was a work of art. The ambiance was perfect for a special evening, and the service was impeccable. "</p>
+                                        <div class="rating text-center">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div class="header text-center">
+                <h3><span><i class="fa-solid fa-utensils"></i></span> meet our team <span><i class="fa-solid fa-utensils"></i></span></h3>
+                <h2>Our Culinary Team</h2>
+            </div>
+            <div class="team-container">
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="team-item">
+                            <img src="../assets/images/Team-1.jpg" alt="Executive Chef">
+                            <div class="team-content">
+                                <div>
+                                    <h5>John Doe</h5>
+                                    <p>Executive Chef</p>
+                                </div>                             
+                            </div>
+                            <div class="icon-container">
+                                <a href="/facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="/instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="/twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="team-item">
+                            <img src="../assets/images/Team-2.jpg" alt="Sous Chef">
+                            <div class="team-content">
+                                <div>
+                                    <h5>Sarah Lee</h5>
+                                    <p>Sous Chef</p>
+                                </div>
+                            </div><div class="icon-container">
+                                <a href="/facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="/instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="/twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="team-item">
+                            <img src="../assets/images/Team-3.jpg" alt="Chef">
+                            <div class="team-content">
+                                <div>
+                                    <h5>Alex Smith</h5>
+                                    <p>Pastry Chef</p>
+                                </div>
+                            </div>
+                            <div class="icon-container">
+                                <a href="/facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="/instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="/twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="team-item">
+                            <img src="../assets/images/Team-4.jpg" alt="Chef">
+                            <div class="team-content">
+                                <div>
+                                    <h5>Emma Brown</h5>
+                                    <p>Restaurant Manager</p>
+                                </div>
+                            </div>
+                            <div class="icon-container">
+                                <a href="/facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="/instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="/twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+    <div class="container">
+        <div class="header text-center">
+            <h3><i class="fa-solid fa-utensils"></i> Explore our plans <i class="fa-solid fa-utensils"></i></h3>
+            <h2>Dining Packages</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="plan-item">
+                    <img src="../assets/images/Plan (1).jpg" alt="Standard Package">
+
+                    <div class="top-icon d-flex">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+
+                    <div class="overlay">
+                        <div class="content">
+                            <h3>Standard Package</h3>
+                            <span></span>
+                            <div class="price">$49</div>
+                            <p>per person</p>
+
+                            <a class="btn" href="/book-table">Book Now</a>
+
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 3-Course Meal</li>
+                                <li><i class="fa-solid fa-check"></i> Complimentary Drink</li>
+                                <li><i class="fa-solid fa-check"></i> Access to Exclusive Menu Items</li>
+                                <li><i class="fa-solid fa-check"></i> Reserved Seating</li>
+                                <li><i class="fa-solid fa-check"></i> Personalized Service</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="plan-item">
+                    <img src="../assets/images/Plan (2).jpg" alt="Family Package">
+
+                    <div class="top-icon d-flex">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+
+                    <div class="overlay">
+                        <div class="content">
+                            <h3>Family Package</h3>
+                            <span></span>
+                            <div class="price">$129</div>
+                            <p>for 4 person</p>
+
+                            <a class="btn" href="/book-table">Book Now</a>
+
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 4-Course Meal</li>
+                                <li><i class="fa-solid fa-check"></i> Complimentary Bottle of Wine</li>
+                                <li><i class="fa-solid fa-check"></i> Special Kids Menu</li>
+                                <li><i class="fa-solid fa-check"></i> Reserved Family Table</li>
+                                <li><i class="fa-solid fa-check"></i> Discount on Additional Orders</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="plan-item">
+                    <img src="../assets/images/Plan (3).jpg" alt="Premium Package">
+
+                    <div class="top-icon d-flex">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+
+                    <div class="overlay">
+                        <div class="content">
+                            <h3>Premium Package</h3>
+                            <span></span>
+                            <div class="price">$199</div>
+                            <p>for 2 person</p>
+
+                            <a class="btn" href="/book-table">Book Now</a>
+
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 5-Course Gourmet Meal </li>
+                                <li><i class="fa-solid fa-check"></i> Premium Wine Pairing </li>
+                                <li><i class="fa-solid fa-check"></i> Exclusive Chef's Table Experience</li>
+                                <li><i class="fa-solid fa-check"></i> Personalized Menu Options </li>
+                                <li><i class="fa-solid fa-check"></i> Priority Reservation </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="newsletter-subscribe">
+        <div class="content text-center">
+            <div class="heading">
+                <h2>Subscribe To Our Newsletter</h2>
+            </div>
+            <p>Be the first to know about our new menu items, upcoming events, and special offers by subscribing to our newsletter.</p>
+
+            <form class="news-form">
+                <div class="newsContainer">
+                    <input type="email" name="email" id="email-id" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="header text-center">
+            <h3><span><i class="fa-solid fa-utensils"></i></span> our recent articles <span><i class="fa-solid fa-utensils"></i></span></h3>
+            <h2>our blogs</h2>
+        </div>
+        <div class="blog-container d-flex">
+           <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="bolgItem">
+                    <div class="image">
+                        <img src="../assets/images/Blog (3).jpg" alt="">
+                    </div>
+                    <div class="date justify-content-center text-center">
+                        25<br> apr
+                    </div>
+                    <div class="content d-flex">
+                        <div class="mainHead d-block">
+                            <h4>How Signature Sauces Can Enhance Your Meals</h4>
+                        </div>
+                        <div class="details d-flex">
+                            <h5><span><i class="fa-solid fa-user-tie"></i></span> By Admin</h5>
+                            <h5><span><i class="fa-solid fa-tags"></i></span> <a href="/recipes">Recipes</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="bolgItem">
+                    <div class="image">
+                        <img src="../assets/images/Blog (2).jpg" alt="">
+                    </div>
+                    <div class="date justify-content-center text-center">
+                        15<br> apr
+                    </div>
+                    <div class="content d-flex">
+                        <div class="mainHead d-block">
+                            <h4>The Art Behind Crafting Our Signature Dishes </h4>
+                        </div>
+                        <div class="details d-flex">
+                            <h5><span><i class="fa-solid fa-user-tie"></i></span> By Admin</h5>
+                            <h5><span><i class="fa-solid fa-tags"></i></span> <a href="/behind the scenes">Behind the Scenes</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="bolgItem">
+                    <div class="image">
+                        <img src="../assets/images/Blog (1).jpg" alt="">
+                    </div>
+                    <div class="date justify-content-center text-center">
+                        18<br> apr
+                    </div>
+                    <div class="content d-flex">
+                        <div class="mainHead d-block">
+                            <h4>The Growing Popularity of Plant-Based Menus in Restaurants</h4>
+                        </div>
+                        <div class="details d-flex">
+                            <h5><span><i class="fa-solid fa-user-tie"></i></span> By Admin</h5>
+                            <h5><span><i class="fa-solid fa-tags"></i></span> <a href="/food trends">Food Trends</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <!-- Brand Partners -->
+    <section id="partners" >
+        <div class="container">
+
+            <div class="logo-viewport">
+                <div class="logo-track">
+
+                    <!-- Original 8 logos -->
+                    <div class="logo"><img src="../assets/images/Partner (1).png"></div>
+                    <div class="logo"><img src="../assets/images/Partner (2).png"></div>
+                    <div class="logo"><img src="../assets/images/Partner (3).png"></div>
+                    <div class="logo"><img src="../assets/images/Partner (4).png"></div>
+                    <div class="logo"><img src="../assets/images/Partner (5).png"></div>
+                    <div class="logo"><img src="../assets/images/Partner (6).png"></div>
+                    <div class="logo"><img src="../assets/images/Partner (7).png"></div>
+                    <div class="logo"><img src="../assets/images/Partner (8).png"></div>
+
+                    <!-- Same logos in duplicate -->
+                    <div class="logo"><img src="../assets/images/Partner (1).png"></div>
+                    <div class="logo"><img src="../assets/images/Partner (2).png"></div>
+                    <div class="logo"><img src="../assets/images/Partner (3).png"></div>
+                    <div class="logo"><img src="../assets/images/Partner (4).png"></div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="header text-center">
+            <h3><span><i class="fa-solid fa-utensils"></i></span> Get In Touch <span><i class="fa-solid fa-utensils"></i></span></h3>
+            <h2>Contact our team</h2>
+        </div>
+
+        <div class="row">
+
+            <!-- Contact Info -->
+            <div class="col-lg-4 mb-4">
+                <div class="contact-info p-4 bg-black shadow-sm h-100">
+                    <h5>contact us..<h5>
+           
+                    <ul class="contact mb-3">
+                        <li class="icon py-2">
+                            <i class="fa-solid fa-map-location"></i>
+                            <span>129 Culinary Avenue</span>
+                        </li>
+                        <li class="icon py-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+111-222-333</span>
+                        </li>
+                        <li class="icon py-2">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@example.com</span>
+                        </li>
+                        <li class="icon py-2">
+                            <i class="fa-solid fa-clock"></i>
+                            <span> openig hours: 9 AM - 11 PM</span>
+                        </li>
+                    </ul>
+                
+            
+                    <div class="social-contact justify-content-center">
+                        <a href="https://www.facebook.com/">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://in.linkedin.com/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>    
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-8 ">
+                <form class="contact-form p-4 shadow-sm" id="contactForm" action="#">
+                    <div class="row mb-3">
+                        <div class="col-md-6 input">
+                            <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" id="submitBtn">Send Message</button>
+                </form>
+            </div>
+
+    </div>
+  </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="content text-center">
+            <p class="mb-0"> © 2026 ClassicFeast. All Rights Reserved
+                <span class="mx-2">|</span>
+                    Designed & Developed by 
+                <strong><a class="designer-name">Srikanth Sureshkumar</a></strong>
+            </p>  
+        </div>
+        <a href="#top" class="btn position-fixed bottom-0 end-0 m-2">
+            <i class="fa-solid fa-up-long"></i>
+        </a>
+    </footer>
+
+    <!-- bs-cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <!-- AOS link -->
+    <script>
+        AOS.init({
+        once: true,   // animation happens only once
+        offset: 120,  // trigger point
+    });
+    </script>
+    
+
+    <!-- js link -->
+    <script src="./js/script.js"></script>
+
+    
+</body>
+</html>
