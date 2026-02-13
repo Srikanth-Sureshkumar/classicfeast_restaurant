@@ -716,7 +716,7 @@
 }
 
 #counting{
-    background-image: url('/assets/images/Counter.jpg');
+    background-image: url('../images/Counter.jpg');
     background-attachment: fixed;
     height: 300px;
 }
@@ -884,27 +884,27 @@
     color: var(--brand-color);
 }
 .serviceBox-1 .card{
-    background-image: url('/assets/images/Service-1.jpg');
+    background-image: url('../images/Service-1.jpg');
     background-position: bottom;
 }
 .serviceBox-2 .card{
-    background-image: url('/assets/images/Service-2.jpg');
+    background-image: url('../images/Service-2.jpg');
     background-position: bottom;
 }
 .serviceBox-3 .card{
-    background-image: url('/assets/images/Service-3.jpg');
+    background-image: url('../images/Service-3.jpg');
     background-position: bottom;
 }
 .serviceBox-4 .card{
-    background-image: url('/assets/images/Service-4.jpg');
+    background-image: url('../images/Service-4.jpg');
     background-position: bottom;
 }
 .serviceBox-5 .card{
-    background-image: url('/assets/images/Service-5.jpg');
+    background-image: url('../images/Service-5.jpg');
     background-position: bottom;
 }
 .serviceBox-6 .card{
-    background-image: url('/assets/images/Service-6.jpg');
+    background-image: url('../images/Service-6.jpg');
     background-position: bottom;
 }
 .carousel-item .card{
@@ -1096,32 +1096,32 @@
 }
 
 .portfolio-item1{
-    background-image: url('/assets/images/Portfolio-1.jpg');
+    background-image: url('../images/Portfolio-1.jpg');
     background-size: cover;
     border-radius: 40px 10px;
 }
 .portfolio-item2{
-    background-image: url('/assets/images/Portfolio-2.jpg');
+    background-image: url('../images/Portfolio-2.jpg');
     background-size: cover;
     border-radius: 40px 10px;
 }
 .portfolio-item3{
-    background-image: url('/assets/images/Portfolio-3.jpg');
+    background-image: url('../images/Portfolio-3.jpg');
     background-size: cover;
     border-radius: 40px 10px;
 }
 .portfolio-item4{
-    background-image: url('/assets/images/Portfolio-4.jpg');
+    background-image: url('../images/Portfolio-4.jpg');
     background-size: cover;
     border-radius: 40px 10px;
 }
 .portfolio-item5{
-    background-image: url('/assets/images/Portfolio-5.jpg');
+    background-image: url('../images/Portfolio-5.jpg');
     background-size: cover;
     border-radius: 40px 10px;
 }
 .portfolio-item6{
-    background-image: url('/assets/images/Portfolio-6.jpg');
+    background-image: url('../images/Portfolio-6.jpg');
     background-size: cover;
     border-radius: 40px 10px;
 }
@@ -1337,7 +1337,7 @@
 }
 
 #missionSection{
-    background-image: url('/assets/images/Mission\ bg-img.jpg');
+    background-image: url('../images/Mission\ bg-img.jpg');
     background-size: cover;
     background-position: bottom;
     height: auto;
@@ -1821,13 +1821,13 @@
 
 /* Background Images */
 .processContainer .processBox-1 .card{
-    background-image: url('/assets/images/Process-1.jpg');
+    background-image: url('../images/Process-1.jpg');
 }
 .processContainer .processBox-2 .card{
-    background-image: url('/assets/images/Process-2.jpg');
+    background-image: url('../images/Process-2.jpg');
 }
 .processContainer .processBox-3 .card{
-    background-image: url('/assets/images/Process-3.jpg');
+    background-image: url('../images/Process-3.jpg');
 }
 
 .processContainer .card{
@@ -1950,7 +1950,7 @@
 }
 /* Banner */
 #banner{
-    background-image: url('/assets/images/Banner1.jpg');
+    background-image: url('../images/Banner1.jpg');
     background-position: center;
     background-size: cover;
     min-height: 400px;
@@ -2143,22 +2143,22 @@
 }
 
 .eventBox-1 .card {
-    background-image: url('/assets/images/Event\ \(1\).jpg');
+    background-image: url('../images/Event\ \(1\).jpg');
 }
 .eventBox-2 .card {
-    background-image: url('/assets/images/Event\ \(2\).jpg');
+    background-image: url('../images/Event\ \(2\).jpg');
 }
 .eventBox-3 .card {
-    background-image: url('/assets/images/Event\ \(3\).jpg');
+    background-image: url('../images/Event\ \(3\).jpg');
 }
 .eventBox-4 .card {
-    background-image: url('/assets/images/Event\ \(4\).jpg');
+    background-image: url('../images/Event\ \(4\).jpg');
 }
 .eventBox-5 .card {
-    background-image: url('/assets/images/Event\ \(5\).jpg');
+    background-image: url('../images/Event\ \(5\).jpg');
 }
 .eventBox-6 .card {
-    background-image: url('/assets/images/Event\ \(6\).jpg');
+    background-image: url('../images/Event\ \(6\).jpg');
 }
 
 #cardSlider .card{
@@ -2367,7 +2367,7 @@
 /* --- PAGES SECTION ---*/
 #pagesSection {
     background: linear-gradient(rgba(0, 0, 0, 0.7)),
-        url("/assets/images/testimonials bg-img.jpg") center / cover fixed;
+        url("../images/testimonials bg-img.jpg") center / cover fixed;
     padding: 30px 5% 0;
 }
 .pageContainer{
@@ -2907,7 +2907,7 @@
 
 #newsletter-subscribe {
     position: relative;
-    background-image: url('/assets/images/Newsletter-img.jpg');
+    background-image: url('../images/Newsletter-img.jpg');
     background-size: cover;
     background-position: center;
     padding: 4rem 1rem;
@@ -3218,7 +3218,7 @@
 
 /* ----CONTACT SECTION---- */
 #contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.7)), url('/assets/images/Contact\ bg-img.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7)), url('../images/Contact\ bg-img.jpg');
     padding: 30px 5%;
 }
 /* --- Heading --- */
