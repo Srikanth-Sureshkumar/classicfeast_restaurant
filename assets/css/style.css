@@ -505,19 +505,19 @@
     position: relative;
 }
 .grid-img1{
-    background-image: url('/assets/images/About-1.jpg');
+    background-image: url('../images/About-1.jpg');
     grid-column: 1/2;
     grid-row: 1/3;
     margin-bottom: 20px;
 }
 .grid-img2{
-    background-image: url('/assets/images/About-2.jpg');
+    background-image: url('../images/About-2.jpg');
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 20px;
 }
 .grid-img3{
-    background-image: url('/assets/images/About-3.jpg');
+    background-image: url('../images/About-3.jpg');
     grid-column: 2/3;
     grid-row: 2/3;
 }
