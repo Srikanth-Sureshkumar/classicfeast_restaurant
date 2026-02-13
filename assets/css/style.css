@@ -466,11 +466,10 @@
 @media (max-width: 576px) {
 
     #features {
-        padding: 30px 4%;
+        padding: 30px 4% 0;
     }
 
     .box1, .box2, .box3, .box4 {
-        height: auto;
         padding: 10px;
     }
 
@@ -506,19 +505,19 @@
     position: relative;
 }
 .grid-img1{
-    background-image: url('../images/About-1.jpg');
+    background-image: url('/assets/images/About-1.jpg');
     grid-column: 1/2;
     grid-row: 1/3;
     margin-bottom: 20px;
 }
 .grid-img2{
-    background-image: url('../images/About-2.jpg');
+    background-image: url('/assets/images/About-2.jpg');
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 20px;
 }
 .grid-img3{
-    background-image: url('../images/About-3.jpg');
+    background-image: url('/assets/images/About-3.jpg');
     grid-column: 2/3;
     grid-row: 2/3;
 }
@@ -652,8 +651,7 @@
 @media (max-width: 576px) {
 
     #aboutSection {
-        padding: 30px 4%;
-        height: auto;
+        padding: 0 4% 20px;
     }
 
     /* Image grid stays same, just scales */
@@ -701,6 +699,15 @@
         font-size: 1rem;
     }
 
+    .features-group ul,li{
+        padding-left: 0;
+    }
+
+    .about-features .col-6{
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+    }
     /* Button center */
     .about-features button {
         display: block;
@@ -709,7 +716,7 @@
 }
 
 #counting{
-    background-image: url('../images/Counter.jpg');
+    background-image: url('/assets/images/Counter.jpg');
     background-attachment: fixed;
     height: 300px;
 }
@@ -877,27 +884,27 @@
     color: var(--brand-color);
 }
 .serviceBox-1 .card{
-    background-image: url('../images/Service-1.jpg');
+    background-image: url('/assets/images/Service-1.jpg');
     background-position: bottom;
 }
 .serviceBox-2 .card{
-    background-image: url('../images/Service-2.jpg');
+    background-image: url('/assets/images/Service-2.jpg');
     background-position: bottom;
 }
 .serviceBox-3 .card{
-    background-image: url('../images/Service-3.jpg');
+    background-image: url('/assets/images/Service-3.jpg');
     background-position: bottom;
 }
 .serviceBox-4 .card{
-    background-image: url('../images/Service-4.jpg');
+    background-image: url('/assets/images/Service-4.jpg');
     background-position: bottom;
 }
 .serviceBox-5 .card{
-    background-image: url('../images/Service-5.jpg');
+    background-image: url('/assets/images/Service-5.jpg');
     background-position: bottom;
 }
 .serviceBox-6 .card{
-    background-image: url('../images/Service-6.jpg');
+    background-image: url('/assets/images/Service-6.jpg');
     background-position: bottom;
 }
 .carousel-item .card{
@@ -1089,37 +1096,37 @@
 }
 
 .portfolio-item1{
-    background-image: url('../images/Portfolio-1.jpg');
+    background-image: url('/assets/images/Portfolio-1.jpg');
     background-size: cover;
     border-radius: 40px 10px;
 }
 .portfolio-item2{
-    background-image: url('../images/Portfolio-2.jpg');
+    background-image: url('/assets/images/Portfolio-2.jpg');
     background-size: cover;
     border-radius: 40px 10px;
 }
 .portfolio-item3{
-    background-image: url('../images/Portfolio-3.jpg');
+    background-image: url('/assets/images/Portfolio-3.jpg');
     background-size: cover;
     border-radius: 40px 10px;
 }
 .portfolio-item4{
-    background-image: url('../images/Portfolio-4.jpg');
+    background-image: url('/assets/images/Portfolio-4.jpg');
     background-size: cover;
     border-radius: 40px 10px;
 }
 .portfolio-item5{
-    background-image: url('../images/Portfolio-5.jpg');
+    background-image: url('/assets/images/Portfolio-5.jpg');
     background-size: cover;
     border-radius: 40px 10px;
 }
 .portfolio-item6{
-    background-image: url('../images/Portfolio-6.jpg');
+    background-image: url('/assets/images/Portfolio-6.jpg');
     background-size: cover;
     border-radius: 40px 10px;
 }
 .portfolio-content{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     height: 300px;
     border-radius: 40px 10px;
     padding: 1.5rem;
@@ -1297,9 +1304,13 @@
 /* ========================================= */
 @media (max-width: 479px) {
 
-    .portfolio-content {
-        height: 220px;
+    #portfolioSection{
+        padding: 20px 0 0;
     }
+    
+      #portfolioSection .portfolio-container{
+        padding: 0;
+      }
 
     .portfolio-content .content {
         padding-top: 100px;
@@ -1313,20 +1324,26 @@
         font-size: 1.4rem;
     }
     .portfolio .nav .nav-item{
-        font-size: 0.7rem !important;
-        width: 40% !important;
-        display: inline;
+        justify-content: center;
+       align-items: center;
+       display: flex;
+    }
+
+    .portfolio .nav .nav-item .nav-link{
+        font-size: 0.8rem;
+        padding: 8px ;
+        width: 50%;
     }
 }
 
 #missionSection{
-    background-image: url(../images/Mission\ bg-img.jpg);
+    background-image: url('/assets/images/Mission\ bg-img.jpg');
     background-size: cover;
     background-position: bottom;
     height: auto;
 }
 .missionOverlay{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     height: 750px;
     width: 70%;
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
@@ -1561,7 +1578,6 @@
 .menu .nav-item .nav-link{
     background-color: black;
     color: var(--white);
-    /* padding: 10px 20px; */
     border-radius: 15px 3px !important;
     text-transform: uppercase;
     font-size: 1rem;
@@ -1697,10 +1713,77 @@
 }
 
 @media (max-width: 575px) {
+    #menuSection{
+        padding-bottom: 20px;
+    }
     .menu .nav-item .nav-link{
         font-size: 0.7rem;
         width: 40%;
         display: inline;
+        padding: 8px;
+    }
+    .menu-item .content h4, .sub{
+        font-size: 1rem !important;
+    }
+
+    #soups .menu-item {
+        height: fit-content;
+    }
+     #beveragrs .menu-item{
+        height: fit-content;
+    }
+    #desserts .menu-item{
+        height: fit-content;
+    }
+    #mainCourses .menu-item{
+        height: fit-content;
+    }
+
+    #soups .menu-item .content{
+        height: fit-content;
+    }
+     #soups .menu-item .content{
+        height: fit-content;
+    }
+    #mainCourses .menu-item .content{
+        height: fit-content;
+    }
+    #beveragrs .menu-item .content{
+        height: fit-content;
+    }
+
+    #soups .menu-item .content .menu-desc{
+        font-size: 0.9rem;
+    }
+
+    
+    #desserts .menu-item .content .menu-desc {
+        font-size: 0.9rem;
+    }
+
+   
+    #mainCourses .menu-item .content .menu-desc {
+        font-size: 0.9rem;
+    }
+
+    #beveragrs .menu-item .content .menu-desc {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+     .menu-item .content h4, .sub{
+        font-size: 1.1rem;
+    }
+    .menu-desc {
+        font-size: 0.9rem;
+    }
+
+    #soups .menu-item .content .menu-desc,
+    #desserts .menu-item .content .menu-desc,
+    #mainCourses .menu-item .content .menu-desc {
+        font-size: 0.8rem;
     }
 }
 #process{
@@ -1738,13 +1821,13 @@
 
 /* Background Images */
 .processContainer .processBox-1 .card{
-    background-image: url(../images/Process-1.jpg);
+    background-image: url('/assets/images/Process-1.jpg');
 }
 .processContainer .processBox-2 .card{
-    background-image: url(../images/Process-2.jpg);
+    background-image: url('/assets/images/Process-2.jpg');
 }
 .processContainer .processBox-3 .card{
-    background-image: url(../images/Process-3.jpg);
+    background-image: url('/assets/images/Process-3.jpg');
 }
 
 .processContainer .card{
@@ -1757,7 +1840,7 @@
 
 /* Overlay */
 .processContainer .processOverlay{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 40px 10px;
     padding: 30px 15px;
     min-height: 350px;
@@ -1867,7 +1950,7 @@
 }
 /* Banner */
 #banner{
-    background-image: url(../images/Banner1.jpg);
+    background-image: url('/assets/images/Banner1.jpg');
     background-position: center;
     background-size: cover;
     min-height: 400px;
@@ -2060,22 +2143,22 @@
 }
 
 .eventBox-1 .card {
-    background-image: url(../images/Event\ \(1\).jpg);
+    background-image: url('/assets/images/Event\ \(1\).jpg');
 }
 .eventBox-2 .card {
-    background-image: url(../images/Event\ \(2\).jpg);
+    background-image: url('/assets/images/Event\ \(2\).jpg');
 }
 .eventBox-3 .card {
-    background-image: url(../images/Event\ \(3\).jpg);
+    background-image: url('/assets/images/Event\ \(3\).jpg');
 }
 .eventBox-4 .card {
-    background-image: url(../images/Event\ \(4\).jpg);
+    background-image: url('/assets/images/Event\ \(4\).jpg');
 }
 .eventBox-5 .card {
-    background-image: url(../images/Event\ \(5\).jpg);
+    background-image: url('/assets/images/Event\ \(5\).jpg');
 }
 .eventBox-6 .card {
-    background-image: url(../images/Event\ \(6\).jpg);
+    background-image: url('/assets/images/Event\ \(6\).jpg');
 }
 
 #cardSlider .card{
@@ -2123,7 +2206,13 @@
 }
 @media (max-width: 576px) {
   .card-img-top {
-    height: 160px;
+    height: 250px !important;
+  }
+  #products .card-body .card-title {
+    text-align: start;
+  }
+  #products .card-body .card-price {
+    text-align: start;
   }
 }
 @media (min-width: 1230px) {
@@ -2227,7 +2316,7 @@
 }
 #products .card .options{
     align-items: center;
-    background-color: #000c;
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     gap: 1rem;
     height: 250px;
@@ -2241,7 +2330,7 @@
 
 }
 #products .card:hover .options{
-    background-color: #000c;
+    background-color: rgba(0, 0, 0, 0.7);
     opacity: 1;
 }
 #products .card .options a{
@@ -2277,8 +2366,8 @@
 
 /* --- PAGES SECTION ---*/
 #pagesSection {
-    background: linear-gradient(#000c, #0009),
-        url("../images/testimonials bg-img.jpg") center / cover fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.7)),
+        url("/assets/images/testimonials bg-img.jpg") center / cover fixed;
     padding: 30px 5% 0;
 }
 .pageContainer{
@@ -2818,7 +2907,7 @@
 
 #newsletter-subscribe {
     position: relative;
-    background-image: url('../images/Newsletter-img.jpg');
+    background-image: url('/assets/images/Newsletter-img.jpg');
     background-size: cover;
     background-position: center;
     padding: 4rem 1rem;
@@ -3129,7 +3218,7 @@
 
 /* ----CONTACT SECTION---- */
 #contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.747)), url('../images/Contact\ bg-img.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7)), url('/assets/images/Contact\ bg-img.jpg');
     padding: 30px 5%;
 }
 /* --- Heading --- */
@@ -3185,7 +3274,7 @@
     height: 40px;
     width: 40px;
     border-radius: 50px;
-    padding: 0.5rem;
+    padding: 11px 8px;
 }
 .contact-info .social-contact a:hover .fa-facebook-f,
 .contact-info .social-contact a:hover .fa-x-twitter,
@@ -3234,6 +3323,9 @@
     .contact-form button {
         font-size: 0.7rem;
     }
+    .contact-info .social-contact a {
+        padding: 10px ;
+    }
 }
 
 
@@ -3266,6 +3358,7 @@
     width: 60px;
     border-radius: 15px 5px 25px 5px;
     padding: 15px 0;
+    bottom: 85px;
 }
 
 #footer .btn .fa-up-long{
